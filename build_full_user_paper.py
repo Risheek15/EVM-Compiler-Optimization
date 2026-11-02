@@ -869,7 +869,7 @@ def build_paper(output_path):
     add_smart_p(doc, "Execution was performed using Foundry/Forge [18] with the Rust revm engine [16]:")
     add_smart_p(doc, "1) Contracts were deployed to a brand new state with a 0 base fee (0 Gwei).")
     add_smart_p(doc, "2) Opcode Profiling: Each invocation was run with tracing enabled (forge test -vvvv) to view warm/cold cache hits, memory expansions and gas taken per opcode.")
-    add_smart_p(doc, "3) Open Science Artifacts: Complete benchmark smart contracts, test harnesses, and reproducibility scripts are available at https://github.com/Risheek15/EVM-Compiler-Optimization.")
+    
 
     # ---------------- IX. CONCLUSION ----------------
     add_h1("IX. Conclusion & Future Work")
@@ -885,6 +885,10 @@ def build_paper(output_path):
     add_smart_p(doc, "2) Zero Knowledge Virtual Machines (zkEVMs): On ZK-rollups (Polygon zkEVM, Scroll, Linea) execution costs are determined by the "
                      "arithmetization constraints (polynomials cells and keccak proofs). Compilers targeting zkEVMs will require a whole new cost model. "
                      "Algebraic gates will be the main target for optimization, replacing traditional CPU opcode minimization with algebraic constraint minimization.")
+
+    # ---------------- REPRODUCIBILITY ----------------
+    add_h1("Reproducibility")
+    add_smart_p(doc, "To support open science and external verification, all benchmark smart contracts, execution trace profiles, test suites, and reproduction scripts presented in this study are publicly accessible in the repository: https://github.com/Risheek15/EVM-Compiler-Optimization.")
 
     # ---------------- REFERENCES ----------------
     add_h1("References")
