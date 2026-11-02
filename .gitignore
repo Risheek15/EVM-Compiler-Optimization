@@ -1,0 +1,17 @@
+# Scratch scripts and test files
+test_*.py
+test_*.docx
+*_test.py
+calibrate_*.py
+apply_*.py
+replace_*.py
+rename_*.py
+copy_and_verify.py
+deploy_and_verify.py
+find_exact_8_pages.py
+fix_quotes.py
+smart_text.py
+user_batch_*.txt
+next_3000_words.txt
+~$*
+__pycache__/
